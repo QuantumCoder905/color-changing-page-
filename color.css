@@ -1,0 +1,35 @@
+/* Apply a background color change animation to the body */
+body {
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    animation: changeBackground 10s infinite; /* 10s duration for each cycle */
+}
+
+/* Animation for color changing */
+@keyframes changeBackground {
+    0% {
+        background-color: #FF5733; /* Red */
+    }
+    25% {
+        background-color: #33FF57; /* Green */
+    }
+    50% {
+        background-color: #3357FF; /* Blue */
+    }
+    75% {
+        background-color: #F0E130; /* Yellow */
+    }
+    100% {
+        background-color: #FF5733; /* Back to Red */
+    }
+}
+
+/* Style for text */
+h1 {
+    color: white;
+    font-size: 3em;
+}
